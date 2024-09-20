@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Calculation</title>
+    
+     Question 1
+    <script>
+        function power(a, b) {
+            return Math.pow(a, b);
+        }
+
+        function calculatePower() {
+            var base = document.getElementById("base").value;
+            var exponent = document.getElementById("exponent").value;
+            var result = power(base, exponent);
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Power Calculation</h1>
+    <label for="base">Base (a):</label>
+    <input type="number" id="base" name="base"><br><br>
+    <label for="exponent">Exponent (b):</label>
+    <input type="number" id="exponent" name="exponent"><br><br>
+    <button onclick="calculatePower()">Calculate</button>
+    <p id="result"></p>
+</body>
+
+
+<!-- Question2
+
+
+<head>
+<title>Leap Year Checker</title>
+    <script>
+        function isLeapYear(year) {
+            return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+        }
+
+        function checkLeapYear() {
+            var year = document.getElementById("year").value;
+            var result = isLeapYear(year) ? year + " is a leap year." : year + " is not a leap year.";
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Leap Year Checker</h1>
+    <label for="year">Enter a year:</label>
+    <input type="number" id="year" name="year"><br><br>
+    <button onclick="checkLeapYear()">Check</button>
+    <p id="result"></p>
+</body> -->
+
+<!-- Question 3
+
+
+<head>
+    <title>Triangle Area Calculator</title>
+    <script>
+        function calculateArea(a, b, c) {
+            var s = (a + b + c) / 2;
+            var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+            return area;
+        }
+
+        function displayArea() {
+            var a = parseFloat(document.getElementById("sideA").value);
+            var b = parseFloat(document.getElementById("sideB").value);
+            var c = parseFloat(document.getElementById("sideC").value);
+            var area = calculateArea(a, b, c);
+            document.getElementById("result").innerText = "Area: " + area.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Triangle Area Calculator</h1>
+    <label for="sideA">Side a:</label>
+    <input type="number" id="sideA" name="sideA"><br><br>
+    <label for="sideB">Side b:</label>
+    <input type="number" id="sideB" name="sideB"><br><br>
+    <label for="sideC">Side c:</label>
+    <input type="number" id="sideC" name="sideC"><br><br>
+    <button onclick="displayArea()">Calculate Area</button>
+    <p id="result"></p>
+</body> -->
+
+ <!-- Question 4
+<body>
+    <h1>Calculate Average and Percentage</h1>
+    <form id="marksForm">
+        <label for="subject1">Subject 1:</label>
+        <input type="number" id="subject1" required><br><br>
+        <label for="subject2">Subject 2:</label>
+        <input type="number" id="subject2" required><br><br>
+        <label for="subject3">Subject 3:</label>
+        <input type="number" id="subject3" required><br><br>
+        <button type="button" onclick="mainFunction()">Calculate</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body> -->
+
+
+<!-- Question 5
+
+
+<body>
+    <h1>Custom indexOf Function</h1>
+    <form id="indexOfForm">
+        <label for="stringInput">String:</label>
+        <input type="text" id="stringInput" required><br><br>
+        <label for="charInput">Character to find:</label>
+        <input type="text" id="charInput" maxlength="1" required><br><br>
+        <button type="button" onclick="mainFunction()">Find Index</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body> -->
+
+<!-- Question 6
+
+<body>
+    <h1>Remove Vowels from a Sentence</h1>
+    <form id="vowelForm">
+        <label for="sentenceInput">Sentence (max 25 characters):</label>
+        <input type="text" id="sentenceInput" maxlength="25" required><br><br>
+        <button type="button" onclick="mainFunction()">Remove Vowels</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body> -->
+
+<!-- Question 7
+
+<body>
+    <h1>Count Successive Vowels</h1>
+    <form id="vowelForm">
+        <label for="textInput">Enter a sentence:</label>
+        <input type="text" id="textInput" maxlength="25" required><br><br>
+        <button type="button" onclick="mainFunction()">Count</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body> -->
+
+<!-- Question 8
+
+<body>
+    <h1>Distance Converter</h1>
+    <label for="distanceKm">Enter distance in kilometers:</label>
+    <input type="number" id="distanceKm" name="distanceKm">
+    <button onclick="convertDistance()">Convert</button>
+
+    <h2>Converted Distances:</h2>
+    <p id="meters"></p>
+    <p id="feet"></p>
+    <p id="inches"></p>
+    <p id="centimeters"></p>
+
+    <script src="converter.js"></script>
+</body> -->
+
+<!-- Question 9
+
+<body>
+    <h1>Overtime Pay Calculator</h1>
+    <label for="hoursWorked">Enter total hours worked:</label>
+    <input type="number" id="hoursWorked" name="hoursWorked">
+    <button onclick="calculateOvertimePay()">Calculate Overtime Pay</button>
+
+    <h2>Overtime Pay:</h2>
+    <p id="overtimePay"></p>
+
+    <script src="overtime.js"></script>
+</body> -->
+
+<!-- Question 10
+
+
+<body>
+    <h1>Currency Notes Calculator</h1>
+    <label for="amount">Enter amount to withdraw (in hundreds):</label>
+    <input type="number" id="amount" name="amount">
+    <button onclick="calculateNotes()">Calculate Notes</button>
+
+    <h2>Number of Notes:</h2>
+    <p id="notes100"></p>
+    <p id="notes50"></p>
+    <p id="notes10"></p>
+
+    <script src="notesCalculator.js"></script>
+</body> -->
+</html>
